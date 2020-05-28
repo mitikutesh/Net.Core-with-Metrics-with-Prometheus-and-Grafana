@@ -35,7 +35,7 @@ namespace PeopleAPI.Controllers
         public IActionResult Post([FromBody] People people)
         {
             var rng = new Random();
-            people.Id = rng.Next(-20, 55);
+            people.Id = rng.Next(0, 55);
             return Ok(people);
         }
     }
